@@ -6,10 +6,14 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/amitaucs/amisoft_property_configuration.git
-          search-paths: 'amisoft/*/*'
-          #username:
-          #password:
+          uri: https://github.com/amitaucs/amisoft_property_configuration.git # Git repository loction of property files
+          search-paths: 'amisoft/*/*'  # Folder structure in which property files located.
+          #username: needs if private repository. The Git user name.
+          #password: needs if private repository. The Git password.
+    consul:
+      host: localhost
+      port: 8500
+
   application:
     name: amisoft-config-server
 security:

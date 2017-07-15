@@ -15,7 +15,7 @@ spring:
       port: 8500
 
   application:
-    name: amisoft-config-server
+    name: amisoft_config_server
 security:
   basic:
     enabled: true
